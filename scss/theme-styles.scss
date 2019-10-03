@@ -1,0 +1,49 @@
+// ======================================
+// Bootstrap Imports
+// ======================================
+@import "../src/bootstrap4/scss/_functions";
+@import "./_variables";
+@import "./_media";
+@import "../src/bootstrap4/scss/_variables";
+@import "../src/bootstrap4/scss/_mixins";
+@import "../src/bootstrap4/scss/_root";
+@import "../src/bootstrap4/scss/_reboot";
+@import "../src/bootstrap4/scss/_type";
+@import "../src/bootstrap4/scss/_images";
+@import "../src/bootstrap4/scss/_code";
+@import "../src/bootstrap4/scss/_grid";
+@import "../src/bootstrap4/scss/_tables";
+@import "../src/bootstrap4/scss/_forms";
+@import "../src/bootstrap4/scss/_buttons";
+@import "../src/bootstrap4/scss/_transitions";
+@import "../src/bootstrap4/scss/_dropdown";
+@import "../src/bootstrap4/scss/_button-group";
+@import "../src/bootstrap4/scss/_input-group";
+@import "../src/bootstrap4/scss/_custom-forms";
+@import "../src/bootstrap4/scss/_nav";
+@import "../src/bootstrap4/scss/_navbar";
+@import "../src/bootstrap4/scss/_card";
+@import "../src/bootstrap4/scss/_breadcrumb";
+@import "../src/bootstrap4/scss/_pagination";
+@import "../src/bootstrap4/scss/_badge";
+@import "../src/bootstrap4/scss/_jumbotron";
+@import "../src/bootstrap4/scss/_alert";
+@import "../src/bootstrap4/scss/_progress";
+@import "../src/bootstrap4/scss/_media";
+@import "../src/bootstrap4/scss/_list-group";
+@import "../src/bootstrap4/scss/_close";
+@import "../src/bootstrap4/scss/_modal";
+@import "../src/bootstrap4/scss/_tooltip";
+@import "../src/bootstrap4/scss/_popover";
+@import "../src/bootstrap4/scss/_carousel";
+@import "../src/bootstrap4/scss/_utilities";
+@import "../src/bootstrap4/scss/_print";
+// ======================================
+// Additional Styles
+// ======================================
+
+.carousel-inner{
+  width:100%;
+  max-height: 40rem !important;
+}
+
