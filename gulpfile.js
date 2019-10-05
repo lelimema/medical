@@ -20,6 +20,15 @@ gulp.task( 'copy-assets', function() {
     var stream = gulp.src('./node_modules/bootstrap/scss/**/*.scss' )
         .pipe( gulp.dest('./src/bootstrap4/scss' ) );
 
+    // Font Awesome
+    var stream = gulp.src('./node_modules/@fortawesome/fontawesome-free/js/**/*.js' )
+        .pipe( gulp.dest('./src/fontawesome/js' ) );
+    var stream = gulp.src('./node_modules/@fortawesome/fontawesome-free/scss/**/*.scss' )
+        .pipe( gulp.dest('./src/fontawesome/scss' ) );
+    var stream = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*' )
+        .pipe( gulp.dest('./src/fontawesome/webfonts' ) );
+        
+
 });
 
 // gulp sass

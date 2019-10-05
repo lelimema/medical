@@ -38,6 +38,9 @@
 @import "../src/bootstrap4/scss/_carousel";
 @import "../src/bootstrap4/scss/_utilities";
 @import "../src/bootstrap4/scss/_print";
+
+// Font Awesome Imports
+@import "../src/fontawesome/scss/fontawesome.scss";
 // ======================================
 // Additional Styles
 // ======================================
@@ -47,3 +50,7 @@
   max-height: 40rem !important;
 }
 
+hr {
+  border-color: #fff;
+  border-width: .1rem;
+}
