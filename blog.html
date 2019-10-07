@@ -16,109 +16,140 @@
     </head>
     <body>
         <!-- logo -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-7 d-flex align-items-center">
-                    <a href="#" class="text-dark">Logo</a>
-                </div>
-                <div class="col-6 col-md-5 d-flex justify-content-end">
-                    <div class="col col-md-4 col-lg-4">
-                        <p>Saint-Petersburg, Millionnaya st. 29</p>
-                    </div>
-                    <div class="col col-md-4 col-lg-4">
-                        <a href="tel:+000000000000" class="text-dark">+000 000 000 000</a><br>
-                        <a href="tel:+000000000000" class="text-dark">+000 000 000 000</a>
-                    </div>
-                    <div class="col col-md-4 col-lg-4">
-                        <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- menu -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarToggler">
+        <nav class="my-logo navbar navbar-expand-lg">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ml-5 mr-3">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item active ml-5 mr-3">
-                        <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#">T</a>
-                    <a href="#">M</a>
+                    Saint-Petersburg, Millionnaya st. 29
+                    <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
+                    <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
                 </span>
+            </nav>
+    
+            <!-- menu mobile -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="my-menu-mobile">
+                            <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </div>
+                            </div>
+                            <span class="openbtn" onclick="openNav()">&#9776;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+    
+            <!-- menu desktop -->
+            <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ml-5 mr-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item active ml-5 mr-3">
+                            <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                </div>
+            </nav>
 
         <!-- medical information - title-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 bg-light">
+                <div class="col-12 bg-light p-5">
                     <h1>Medical Information</h1>
                 </div>
             </div>
         </div>
 
+        <!-- boxes -->
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-12 my-boxes">
+                    <div class="my-box-1 bg-dark text-white text-center p-3">
+                        <h5 class="py-3">Working Hours</h5>
+                        <p>Monday - Friday  08:00 - 18:00</p>
+                        <p>Monday - Friday  08:00 - 18:00</p>
+                        <p>Monday - Friday  08:00 - 18:00</p>
+                    </div>
+                    <div class="my-box-2 bg-dark text-white text-center p-3">
+                        <h5 class="py-3">Emergency Cases</h5>
+                        <a href="tel:+000000000000" class="text-white">+000 000 000 000</a>
+                        <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- post -->
-        <div class="container-fluid">
+        <div class="container-fluid my-5">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
-                    <img src="./img/img3.jpg" class="img-fluid" alt="">
+                        <img src="./img/img3.jpg" class="img-fluid" alt="">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-md-4 col-lg-4 pt-5">
                             <p>11 Apr 2019</p>
                             <p>Author Name</p>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-8">
-                            <h4>The Title</h4>
+                        <div class="col-12 col-md-8 col-lg-8 py-5">
+                            <h4 class="pb-3">The Title</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="btn btn-outline-dark">Button</button>
+                            <button class="btn btn-outline-dark mt-3">Button</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid my-5">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
-                    <img src="./img/img3.jpg" class="img-fluid" alt="">
+                        <img src="./img/img3.jpg" class="img-fluid" alt="">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-4"></div>
+                        <div class="col-12 col-md-4 col-lg-4 pt-5">
                             <p>11 Apr 2019</p>
                             <p>Author Name</p>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-8">
-                            <h4>The Title</h4>
+                        <div class="col-12 col-md-8 col-lg-8 py-5">
+                            <h4 class="pb-3">The Title</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="btn btn-outline-dark">Button</button>
+                            <button class="btn btn-outline-dark mt-3">Button</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid my-5">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
                     <img src="./img/img3.jpg" class="img-fluid" alt="">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-md-4 col-lg-4 pt-5">
                             <p>11 Apr 2019</p>
                             <p>Author Name</p>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-8">
-                            <h4>The Title</h4>
+                        <div class="col-12 col-md-8 col-lg-8 py-5">
+                            <h4 class="pb-3">The Title</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="btn btn-outline-dark">Button</button>
+                            <button class="btn btn-outline-dark mt-3">Button</button>
                         </div>
                     </div>
                 </div>
@@ -126,7 +157,7 @@
         </div>
 
         <!-- pagination -->
-        <div class="container-fluid">
+        <div class="container-fluid mb-5">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
                     <nav aria-label="Page navigation example">
@@ -164,23 +195,26 @@
                 </div>
             </div>
             <hr>
-            <div class="row px-5">
-                <div class="col-12 col-md-3 col-lg-3 my-3 px-5">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3 my-3 footer-link">
                     <a href="#" class="text-white">Logo</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 my-3 text-center">
-                    <a href="#" class="text-white px-3">Menu One</a>
-                    <a href="#" class="text-white px-3">Menu Two</a>
-                    <a href="#" class="text-white px-3">Menu Three</a>
-                    <a href="#" class="text-white px-3">Menu Four</a>
+                <div class="col-12 col-md-6 col-lg-6 my-3 text-center footer-link">
+                    <a href="#" class="text-white">Menu One</a>
+                    <a href="#" class="text-white">Menu Two</a>
+                    <a href="#" class="text-white">Menu Three</a>
+                    <a href="#" class="text-white">Menu Four</a>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3 my-3 text-right px-5">
-                    <a href="#" class="text-white">Social</a>
+                <div class="col-12 col-md-3 col-lg-3 my-3 text-right footer-link">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
 
     <!-- scripts -->
     <script type="text/javascript" src="./src/bootstrap4/js/bootstrap.min.js"></script>
+
+    <script src="./dist/js/main.js"></script>
+
     </body>
 </html>
