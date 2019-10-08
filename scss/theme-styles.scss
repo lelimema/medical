@@ -39,6 +39,9 @@
 @import "../src/bootstrap4/scss/_utilities";
 @import "../src/bootstrap4/scss/_print";
 
+// Pushy Css
+@import "../src/pushy/scss/pushy";
+
 // Font Awesome Imports
 @import "../src/fontawesome/scss/fontawesome.scss";
 // ======================================
@@ -60,56 +63,19 @@
   @include breakpoint(mobile){
     display: none;
   }
+
+  @include breakpoint(tablet){
+    display: none;
+  }
 }
 
 // menu mobile
 .my-menu-mobile {
   display: unset;
-
-  .openbtn {
-    font-size: 2rem;
-  }
-
-  .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-
-    .closebtn {
-      position: absolute;
-      top: 1.5rem;
-      right: 3rem;
-      font-size: 4rem;
-      color: gray;
-    }
-
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 2rem;
-
-      a {
-        padding: 0.5rem;
-        text-decoration: none;
-        font-size: 2.5rem;
-        color: gray;
-        display: block;
-        transition: 0.3s;
-      }
-    }
-  }
+  font-size: 2rem;
 
   @include breakpoint(tablet){
-    display: none;
+    display: unset;
   }
 
   @include breakpoint(desktop){
@@ -128,7 +94,7 @@
   position: relative;
 }
 
-// my-boxes
+// fixed boxes on carousel
 .my-boxes {
 
   .my-box-1 {
@@ -206,6 +172,13 @@
   }
 }
 
+.my-services {
+
+  a {
+    cursor: pointer;
+  }
+}
+
 hr {
   border-color: #fff;
   border-width: .1rem;
@@ -221,5 +194,4 @@ hr {
     padding: 0;
     text-align: center!important;
   }
-
 }

@@ -17,58 +17,59 @@
     <body>
         <!-- logo -->
         <nav class="my-logo navbar navbar-expand-lg">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Saint-Petersburg, Millionnaya st. 29
+                <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
+                <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
+            </span>
+        </nav>
+
+        <!-- menu mobile -->
+        <nav class="pushy pushy-left">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-link"><a href="index.html">Home</a></li>
+                    <li class="pushy-link"><a href="about.html">About</a></li>
+                    <li class="pushy-link"><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+
+        <!-- Menu Button -->
+        <button class="menu-btn my-menu-mobile btn">&#9776;</button>
+
+        <!-- menu desktop -->
+        <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ml-5 mr-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active ml-5 mr-3">
+                        <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    Saint-Petersburg, Millionnaya st. 29
-                    <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
-                    <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </span>
-            </nav>
-    
-            <!-- menu mobile -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="my-menu-mobile">
-                            <div id="myNav" class="overlay">
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <div class="overlay-content">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                    <a class="nav-link" href="about.html">About</a>
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                </div>
-                            </div>
-                            <span class="openbtn" onclick="openNav()">&#9776;</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-    
-            <!-- menu desktop -->
-            <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item ml-5 mr-3">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item active ml-5 mr-3">
-                            <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </span>
-                </div>
-            </nav>
+        </nav>
 
         <!-- medical information - title-->
         <div class="container-fluid">
@@ -210,10 +211,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- scripts -->
-    <script type="text/javascript" src="./src/bootstrap4/js/bootstrap.min.js"></script>
-
     <script src="./dist/js/main.js"></script>
 
     </body>

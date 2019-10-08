@@ -2,10 +2,11 @@ var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
+var streamqueue  = require('streamqueue');
 
 // copy all HTML files
 gulp.task('copyHtml', function (){
-    gulp.src('*.html')
+    return gulp.src('*.html')
         .pipe(gulp.dest('dist'));
 });
 
@@ -27,7 +28,12 @@ gulp.task( 'copy-assets', function() {
         .pipe( gulp.dest('./src/fontawesome/scss' ) );
     var stream = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*' )
         .pipe( gulp.dest('./src/fontawesome/webfonts' ) );
-        
+
+    // Pushy Css
+    var stream = gulp.src('./node_modules/@cmyee/pushy/js/**/pushy.js' )
+        .pipe( gulp.dest('./src/pushy/js' ) );
+    var stream = gulp.src('./node_modules/@cmyee/pushy/scss/**/pushy.scss' )
+        .pipe( gulp.dest('./src/pushy/scss' ) );
 
 });
 
@@ -41,7 +47,11 @@ gulp.task('sass', function () {
 // gulp scripts
 // minify and concat all JS files into one
 gulp.task('scripts', function(){
-    gulp.src('js/*.js')
+    return streamqueue({ objectMode: true },
+        gulp.src('js/**/*.js'),
+        gulp.src('src/bootstrap4/js/bootstrap.js'),
+        gulp.src('src/pushy/js/pushy.js')
+    )
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
