@@ -42,8 +42,19 @@
 // Pushy Css
 @import "../src/pushy/scss/pushy";
 
-// Font Awesome Imports
-@import "../src/fontawesome/scss/fontawesome.scss";
+
+// ======================================
+// Social Media Icons
+// ======================================
+
+.social-media-icons a {
+  color: white;
+
+  &:hover {
+    color: rgba(white, $alpha: 0.9);
+  }
+}
+
 // ======================================
 // Additional Styles
 // ======================================
