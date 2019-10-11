@@ -20,19 +20,6 @@
 </head>
 
 <body>
-    <!-- logo -->
-    <nav class="my-logo navbar navbar-expand-lg">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-3">
-                <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <span class="navbar-text">
-            Saint-Petersburg, Millionnaya st. 29
-            <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
-            <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
-        </span>
-    </nav>
 
     <!-- menu mobile -->
     <nav class="pushy pushy-left">
@@ -45,36 +32,53 @@
         </div>
     </nav>
 
-    <!-- Site Overlay -->
+    <!-- site overlay -->
     <div class="site-overlay"></div>
 
-    <!-- Your Content -->
+    <!-- your content -->
     <div id="container">
 
-        <!-- Menu Button -->
-        <button class="menu-btn my-menu-mobile btn">&#9776;</button>
-
-        <!-- menu desktop -->
-        <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarToggler">
+        <!-- app preheader -->
+        <section id="app-pre-header">
+            <nav class="my-logo navbar navbar-expand-lg">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ml-5 mr-3">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item active ml-5 mr-3">
-                        <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <div class="social-media-icons">
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                <span class="navbar-text">
+                    Saint-Petersburg, Millionnaya st. 29
+                    <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
+                    <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
+                </span>
+            </nav>
+            <!-- toggle pushy menu -->
+            <button class="menu-btn my-menu-mobile btn">&#9776;</button>
+        </section>
+
+        <section id="app-header">
+            <!-- menu desktop -->
+            <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ml-5 mr-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item active ml-5 mr-3">
+                            <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <div class="social-media-icons">
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
 
         <!-- medical information - title-->
         <section class="bg-light p-5">
@@ -87,128 +91,206 @@
             </div>
         </section>
 
-        <!-- boxes -->
-        <div class="container py-5 blog-boxes">
-            <div class="row">
-                <div class="col-12 col-sm-6 my-box-1 bg-dark text-white text-center px-3 py-5">
-                    <h5>Working Hours</h5>
-                    <ul class="list-unstyled py-3">
-                        <li>Monday - Friday 08:00 - 18:00</li>
-                        <li>Monday - Friday 08:00 - 18:00</li>
-                        <li>Monday - Friday 08:00 - 18:00</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 my-box-2 bg-dark text-white text-center px-3 py-5">
-                    <h5>Emergency Cases</h5>
-                    <a href="tel:+000000000000" class="text-white">+000 000 000 000</a>
-                    <p class="pt-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </div>
-        </div>
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- content -->
+                    <div class="col-12 col-lg-8 order-last order-md-first">
 
-        <!-- post -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- pagination -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-8">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- sidebar -->
+                    <div class="col-12 col-lg-4 order-first order-md-last">
+                        <div id="sidebar">
+                            <!-- widget -->
+                            <div class="widget bg-dark text-white mb-5">
+                                <div class="widget-content p-5">
+                                    <h5>Working Hours</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- widget -->
+                            <div class="widget bg-dark text-white mb-5">
+                                <div class="widget-content p-5">
+                                    <h5>Emergency Cases</h5>
+                                    <a href="tel:+000000000000" class="text-white">+000 000 000 000</a>
+                                    <p class="pt-2 text-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- pagination section -->
+        <section id="pagination" class="border-top py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="">
+                            <ul class="pagination pagination-lg mb-0">
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- footer -->
         <section id="app-footer" class="bg-primary text-white py-5">
