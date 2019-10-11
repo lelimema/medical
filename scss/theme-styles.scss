@@ -42,12 +42,28 @@
 // Pushy Css
 @import "../src/pushy/scss/pushy";
 
+// ======================================
+// Universal
+// ======================================
+
+.hr-white-15 {
+  border-color: rgba(white, $alpha: 0.15);
+}
+
+.border-white-15 {
+  border-color: rgba(white, $alpha: 0.15) !important;
+}
 
 // ======================================
 // Social Media Icons
 // ======================================
 
 .social-media-icons a {
+  height: 30px;
+  width: 35px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
   color: white;
 
   &:hover {
