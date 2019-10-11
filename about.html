@@ -20,24 +20,11 @@
 </head>
 
 <body>
-    <!-- logo -->
-    <nav class="my-logo navbar navbar-expand-lg">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-3">
-                <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <span class="navbar-text">
-            Saint-Petersburg, Millionnaya st. 29
-            <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
-            <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
-        </span>
-    </nav>
 
-    <!-- menu mobile -->
+    <!-- mobile pushy menu -->
     <nav class="pushy pushy-left">
         <div class="pushy-content">
-            <ul>
+            <ul class="list-unstyled text-center">
                 <li class="pushy-link"><a href="index.html">Home</a></li>
                 <li class="pushy-link"><a href="about.html">About</a></li>
                 <li class="pushy-link"><a href="blog.html">Blog</a></li>
@@ -51,30 +38,47 @@
     <!-- content -->
     <div id="container">
 
-        <!-- menu button -->
-        <button class="menu-btn my-menu-mobile btn">&#9776;</button>
-
-        <!-- menu desktop -->
-        <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarToggler">
+        <!-- app preheader -->
+        <section id="app-pre-header">
+            <nav class="my-logo navbar navbar-expand-lg">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item active ml-5 mr-3">
-                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ml-5 mr-3">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <div class="social-media-icons">
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
-                    <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                <span class="navbar-text">
+                    Saint-Petersburg, Millionnaya st. 29
+                    <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
+                    <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
+                </span>
+            </nav>
+            <!-- toggle pushy menu -->
+            <button class="menu-btn my-menu-mobile btn">&#9776;</button>
+        </section>
+
+        <!-- app header -->
+        <section id="app-header">
+            <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active ml-5 mr-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ml-5 mr-3">
+                            <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <div class="social-media-icons">
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
 
         <!-- about us -->
         <section class="bg-light p-5">
@@ -88,35 +92,41 @@
         </section>
 
         <!-- our history -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 text-center my-5">
-                    <h2>Our History</h2>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading">
+                            <h2>Our History</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-lg-6 my-3">
-                    <h4 class="pb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-6 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6 my-3">
+                        <h4 class="pb-3">The Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-6 my-3">
+                        <img src="https://via.placeholder.com/800x600/CED4DA/000000" class="img-fluid" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- working hours - emergency cases -->
         <section class="bg-light py-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-6 col-lg-5">
+                    <div class="col-12 col-sm-6 col-lg-5 text-center text-md-left">
                         <h4>Working Hours</h4>
                         <ul class="list-unstyled mt-3">
                             <li>Monday - Friday | 08:00 - 18:00</li>
@@ -124,7 +134,7 @@
                             <li>Monday - Friday | 08:00 - 18:00</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-5 mt-5 mt-sm-0">
+                    <div class="col-12 col-sm-6 col-lg-5 text-center text-md-left mt-5 mt-sm-0">
                         <h4>Emergency Cases</h4>
                         <a href="tel:+000000000000" class="text-dark font-weight-bold">+000 000 000 000</a>
                         <ul class="list-unstyled mt-3">
@@ -138,53 +148,59 @@
         </section>
 
         <!-- our doctors-->
-        <div class="container text-center py-5">
-            <div class="row justify-content-center">
-                <div class="col-12 mb-3">
-                    <h2>Our Doctors</h2>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading">
+                            <h2>Our Doctors</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                    <h6 class="mt-3">Employee One</h6>
-                    <p>Position</p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
+                        <img src="https://via.placeholder.com/300/CED4DA/000000" class="img-fluid" alt="">
+                        <h6 class="mt-3">Employee One</h6>
+                        <p>Position</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
         <section id="app-footer" class="bg-primary text-white py-5">

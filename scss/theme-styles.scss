@@ -76,6 +76,33 @@
 }
 
 // ======================================
+// Sections
+// ======================================
+
+.section-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: map-get($spacers, 5);
+}
+
+// ======================================
+// Pushy
+// ======================================
+
+.pushy{
+  background-color: white;
+
+  a{
+    color: $dark;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+}
+
+// ======================================
 // Additional Styles
 // ======================================
 
