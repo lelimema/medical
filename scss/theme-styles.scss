@@ -1,6 +1,7 @@
 // ======================================
-// Bootstrap Imports
+// Bootstrap
 // ======================================
+
 @import "../src/bootstrap4/scss/_functions";
 @import "./_variables";
 @import "./_media";
@@ -39,7 +40,10 @@
 @import "../src/bootstrap4/scss/_utilities";
 @import "../src/bootstrap4/scss/_print";
 
-// Pushy Css
+// ======================================
+// 3RD Party
+// ======================================
+
 @import "../src/pushy/scss/pushy";
 
 // ======================================
