@@ -4,7 +4,6 @@
 
 @import "../src/bootstrap4/scss/_functions";
 @import "./_variables";
-@import "./_media";
 @import "../src/bootstrap4/scss/_variables";
 @import "../src/bootstrap4/scss/_mixins";
 @import "../src/bootstrap4/scss/_root";
@@ -56,6 +55,47 @@
 
 .border-white-15 {
   border-color: rgba(white, $alpha: 0.15) !important;
+}
+
+// ======================================
+// App Header
+// ======================================
+
+#app-pre-header {
+  .fas {
+    font-size: 1.8rem;
+    color: $secondary;
+  }
+}
+
+.icon-holder {
+  float: left;
+  height: 50px;
+  padding-right: 2rem;
+}
+
+.header-contact-us-wrapper {
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 800px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+
+    .icon-holder {
+      float: none;
+      display: block;
+      height: auto;
+      margin-bottom: map-get($spacers, 3);
+      padding-right: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
 }
 
 // ======================================
@@ -115,7 +155,7 @@
     position: absolute;
     width: 320px;
     z-index: 99;
-    right: 15%;
+    right: 10%;
     padding: map-get($spacers, 4) map-get($spacers, 3);
 
     &.information-box-top {
@@ -140,7 +180,7 @@
 .my-logo {
   font-size: 1rem;
 
-  @include breakpoint(mobile){
+  @include media-breakpoint-down(sm) {
     font-size: .8rem;
   }
 }
@@ -148,7 +188,7 @@
 // menu desktop
 .my-menu {
 
-@include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
 }
