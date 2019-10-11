@@ -11,31 +11,31 @@
 @import "../src/bootstrap4/scss/_reboot";
 @import "../src/bootstrap4/scss/_type";
 @import "../src/bootstrap4/scss/_images";
-@import "../src/bootstrap4/scss/_code";
+// @import "../src/bootstrap4/scss/_code";
 @import "../src/bootstrap4/scss/_grid";
-@import "../src/bootstrap4/scss/_tables";
-@import "../src/bootstrap4/scss/_forms";
+// @import "../src/bootstrap4/scss/_tables";
+// @import "../src/bootstrap4/scss/_forms";
 @import "../src/bootstrap4/scss/_buttons";
 @import "../src/bootstrap4/scss/_transitions";
-@import "../src/bootstrap4/scss/_dropdown";
-@import "../src/bootstrap4/scss/_button-group";
-@import "../src/bootstrap4/scss/_input-group";
-@import "../src/bootstrap4/scss/_custom-forms";
+// @import "../src/bootstrap4/scss/_dropdown";
+// @import "../src/bootstrap4/scss/_button-group";
+// @import "../src/bootstrap4/scss/_input-group";
+// @import "../src/bootstrap4/scss/_custom-forms";
 @import "../src/bootstrap4/scss/_nav";
 @import "../src/bootstrap4/scss/_navbar";
-@import "../src/bootstrap4/scss/_card";
-@import "../src/bootstrap4/scss/_breadcrumb";
+// @import "../src/bootstrap4/scss/_card";
+// @import "../src/bootstrap4/scss/_breadcrumb";
 @import "../src/bootstrap4/scss/_pagination";
-@import "../src/bootstrap4/scss/_badge";
-@import "../src/bootstrap4/scss/_jumbotron";
-@import "../src/bootstrap4/scss/_alert";
-@import "../src/bootstrap4/scss/_progress";
+// @import "../src/bootstrap4/scss/_badge";
+// @import "../src/bootstrap4/scss/_jumbotron";
+// @import "../src/bootstrap4/scss/_alert";
+// @import "../src/bootstrap4/scss/_progress";
 @import "../src/bootstrap4/scss/_media";
-@import "../src/bootstrap4/scss/_list-group";
+// @import "../src/bootstrap4/scss/_list-group";
 @import "../src/bootstrap4/scss/_close";
-@import "../src/bootstrap4/scss/_modal";
-@import "../src/bootstrap4/scss/_tooltip";
-@import "../src/bootstrap4/scss/_popover";
+// @import "../src/bootstrap4/scss/_modal";
+// @import "../src/bootstrap4/scss/_tooltip";
+// @import "../src/bootstrap4/scss/_popover";
 @import "../src/bootstrap4/scss/_carousel";
 @import "../src/bootstrap4/scss/_utilities";
 @import "../src/bootstrap4/scss/_print";
@@ -103,6 +103,36 @@
 }
 
 // ======================================
+// Home Carousel
+// ======================================
+
+.information-box {
+  color: white;
+  background-color: $secondary;
+  padding: map-get($spacers, 5) map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    width: 320px;
+    z-index: 99;
+    right: 15%;
+    padding: map-get($spacers, 4) map-get($spacers, 3);
+
+    &.information-box-top {
+      top: 40px;
+    }
+
+    &.information-box-bottom {
+      top: 270px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    min-height: 250px;
+  }
+}
+
+// ======================================
 // Additional Styles
 // ======================================
 
@@ -139,115 +169,12 @@
   position: relative;
 }
 
-// fixed boxes on carousel
-.carousel-boxes {
-  .my-box-1 {
-    margin: 0 0 1rem 0;
-    font-size: .9rem;
-
-    @include media-breakpoint-up(sm) {
-      position: absolute;
-      right: 7%;
-      z-index: 100;
-      height: 12rem;
-      width: 15rem;
-      margin-top: 3rem;
-    }
-
-    @include media-breakpoint-down(md) {
-      position: relative;
-      margin-top: 0;
-      right: 0;
-      height: 13rem;
-    }
-  }
-
-  .my-box-2 {
-    margin: 0 0 1rem 0;
-    font-size: .9rem;
-
-    @include media-breakpoint-up(sm) {
-      position: absolute;
-      top:18rem;
-      right: 7%;
-      z-index:100;
-      height: 12rem;
-      width: 15rem;
-      margin-top: 10rem;
-    }
-
-    @include media-breakpoint-down(md) {
-      position: relative;
-      margin-top: 0;
-      right: 0;
-      top: 0;
-      height: 13rem;
-    }
-  }
-}
-
-// fixed boxes on blog page
-.blog-boxes {
-  .my-box-1 {
-    margin: 0 0 1rem 0;
-    font-size: .9rem;
-
-    @include media-breakpoint-up(sm) {
-      position: absolute;
-      right: 3%;
-      z-index: 100;
-      height: 14rem;
-      width: 17rem;
-      margin-top: 6rem;
-    }
-
-    @include media-breakpoint-down(md) {
-      position: relative;
-      margin-top: 0;
-      right: 0;
-      height: 13rem;
-    }
-  }
-
-  .my-box-2 {
-    margin: 0 0 1rem 0;
-    font-size: .9rem;
-
-    @include media-breakpoint-up(sm) {
-      position: absolute;
-      top:18rem;
-      right: 3%;
-      z-index:100;
-      height: 14rem;
-      width: 17rem;
-      margin-top: 23rem;
-    }
-
-    @include media-breakpoint-down(md) {
-      position: relative;
-      margin-top: 0;
-      right: 0;
-      top: 0;
-      height: 13rem;
-    }
-  }
-}
+// ======================================
+// Services Section
+// ======================================
 
 .my-services {
-
   a {
     cursor: pointer;
-  }
-}
-
-.footer-link {
-
-  a {
-    padding: 0 1rem 0 1rem;
-  }
-
-  @include media-breakpoint-down(md) {
-    padding: 0;
-    text-align: center!important;
   }
 }
