@@ -4,12 +4,12 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run-browser-sync": "browser-sync . -w "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",

@@ -1,228 +1,366 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Blog</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- styles -->
-        <link rel="stylesheet" href="./dist/css/theme-styles.css" type="text/css">
+    <title>Blog</title>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- logo -->
-        <nav class="my-logo navbar navbar-expand-lg">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="index.html">Logo <span class="sr-only">(current)</span></a>
-                </li>
+    <!-- styles -->
+    <link rel="stylesheet" href="./dist/css/theme-styles.css" type="text/css">
+
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- mobile pushy menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <ul class="list-unstyled text-center">
+                <li class="pushy-link"><a href="index.html">Home</a></li>
+                <li class="pushy-link"><a href="about.html">About</a></li>
+                <li class="pushy-link"><a href="blog.html">Blog</a></li>
             </ul>
-            <span class="navbar-text">
-                Saint-Petersburg, Millionnaya st. 29
-                <a href="tel:+000000000000" class="text-dark px-3">+000 000 000 000</a>
-                <a href="mailto:mymail@email.com" class="text-dark">mymail@email.com</a>
-            </span>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- menu mobile -->
-        <nav class="pushy pushy-left">
-            <div class="pushy-content">
-                <ul>
-                    <li class="pushy-link"><a href="index.html">Home</a></li>
-                    <li class="pushy-link"><a href="about.html">About</a></li>
-                    <li class="pushy-link"><a href="blog.html">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!-- site overlay -->
+    <div class="site-overlay"></div>
 
-        <!-- Site Overlay -->
-        <div class="site-overlay"></div>
+    <!-- your content -->
+    <div id="container">
 
-        <!-- Your Content -->
-        <div id="container">
-
-        <!-- Menu Button -->
-        <button class="menu-btn my-menu-mobile btn">&#9776;</button>
-
-        <!-- menu desktop -->
-        <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ml-5 mr-3">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item active ml-5 mr-3">
-                        <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </span>
-            </div>
-        </nav>
-
-        <!-- medical information - title-->
-        <section class="bg-light p-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Medical Information</h1>
+        <!-- app preheader -->
+        <section id="app-pre-header">
+                <nav class="my-logo navbar navbar-expand-lg d-none d-sm-flex">
+                    <ul class="navbar-nav mr-auto d-none d-lg-block">
+                        <li class="nav-item mr-3">
+                            <span class="text-primary border border-primary font-weight-bold py-2 px-4 text-uppercase">Logo</span>
+                        </li>
+                    </ul>
+                    <div class="navbar-text header-contact-us-wrapper" style="width: 100%;">
+                        <!-- contact us details -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4">
+                                    <span class="icon-holder"><i class="fas fa-location-arrow"></i></span>
+                                    <strong>
+                                        Saint-Petersburg, <br>
+                                        Millionnaya st. 29
+                                    </strong>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <span class="icon-holder"><i class="fas fa-phone"></i></span>
+                                    <strong>
+                                        (+852) 0000 0000 <br>
+                                        (+852) 0000 0000
+                                    </strong>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <span class="icon-holder"><i class="fas fa-at"></i></span>
+                                    <strong>
+                                        mail@example.com
+                                    </strong>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </nav>
+
+                <!-- toggle pushy menu -->
+                <div class="border-top d-block d-lg-none">
+                    <button class="menu-btn my-menu-mobile btn">&#9776;</button>
                 </div>
             </section>
 
-            <!-- boxes -->
-        <div class="container py-5 blog-boxes">
-            <div class="row">
-                <div class="col-12 col-sm-6 my-box-1 bg-dark text-white text-center px-3 py-5">
-                    <h5>Working Hours</h5>
-                    <ul class="list-unstyled py-3">
-                        <li>Monday - Friday  08:00 - 18:00</li>
-                        <li>Monday - Friday  08:00 - 18:00</li>
-                        <li>Monday - Friday  08:00 - 18:00</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 my-box-2 bg-dark text-white text-center px-3 py-5">
-                    <h5>Emergency Cases</h5>
-                    <a href="tel:+000000000000" class="text-white">+000 000 000 000</a>
-                    <p class="pt-2 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- post -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-9">
-                    <img src="./img/img1.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-lg-2 mt-5">
-                    <ul class="list-unstyled">
-                        <li>11 Apr 2019</li>
-                        <li>Author Name</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-9 col-lg-7 my-5">
-                    <h4 class="mb-3">The Title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="btn btn-outline-dark mt-3">Button</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- pagination -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-8">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
+            <!-- app header -->
+            <section id="app-header">
+                <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                            <li class="nav-item ml-5 mr-3">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item active ml-5 mr-3">
+                                <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
                             </li>
                         </ul>
-                    </nav>
+                        <div class="social-media-icons">
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15 w-auto font-weight-bold">English</a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+        <!-- medical information - title-->
+        <section class="bg-light p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Medical Information</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- content -->
+                    <div class="col-12 col-lg-8 order-last order-md-first">
+
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- post item -->
+                        <div class="post-item mb-5">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <img src="https://via.placeholder.com/944x531/CED4DA/000000"
+                                        class="img-fluid d-none d-md-block" alt="">
+                                    <img src="https://via.placeholder.com/800x600/CED4DA/000000"
+                                        class="img-fluid d-block d-md-none" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li class="text-muted small">11 Apr 2019</li>
+                                        <li class="font-weight-bold">Author Name</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-9 col-lg-10">
+                                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="text-justify pr-md-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <button class="btn btn-secondary mt-3">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- sidebar -->
+                    <div class="col-12 col-lg-4 order-first order-md-last">
+                        <div id="sidebar">
+                            <!-- widget -->
+                            <div class="widget bg-secondary text-white mb-5">
+                                <div class="widget-content p-4">
+                                    <h5>Working Hours</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                        <li>Monday - Friday 08:00 - 18:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- widget -->
+                            <div class="widget bg-secondary text-white mb-5">
+                                <div class="widget-content p-4">
+                                    <h5>Emergency Cases</h5>
+                                    <a href="tel:+000000000000" class="text-white">+000 000 000 000</a>
+                                    <p class="pt-2 text-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pagination section -->
+        <section id="pagination" class="border-top py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="">
+                            <ul class="pagination pagination-lg mb-0">
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link text-dark" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- footer -->
-        <div class="container-fluid bg-dark text-white">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-3 col-lg-3 mx-auto my-3 text-center">
-                        <a href="#" class="text-white">My Link 1</a> -
-                        <a href="#" class="text-white">My Link 2</a> -
-                        <a href="#" class="text-white">My Link 3</a> -
-                        <a href="#" class="text-white">My Link 4</a> -
-                        <a href="#" class="text-white">My Link 5</a>
+        <section id="app-footer" class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <ul class="list-unstyled text-center d-md-flex justify-content-center">
+                            <li><a href="#" class="d-block text-white px-3 py-2">Sample Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Sample Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Sample Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Sample Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Sample Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="hr-white-15">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-3 my-3 text-center text-md-left">
+                        <span class="text-white border border-white-15 font-weight-bold py-2 px-4 text-uppercase">Logo</span>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 my-3 text-center">
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center small">
+                            <li><a href="#" class="d-block text-white px-3 py-2">Small Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Small Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Small Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Small Link</a></li>
+                            <li><a href="#" class="d-block text-white px-3 py-2">Small Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 my-3 text-center text-md-right">
+                        <div class="social-media-icons">
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-md-3 col-lg-3 my-3 footer-link">
-                    <a href="#" class="text-white">Logo</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 my-3 text-center footer-link">
-                    <a href="#" class="text-white">Menu One</a>
-                    <a href="#" class="text-white">Menu Two</a>
-                    <a href="#" class="text-white">Menu Three</a>
-                    <a href="#" class="text-white">Menu Four</a>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3 my-3 text-right footer-link">
-                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
 
     <!-- scripts -->
     <script src="./dist/js/main.js"></script>
 
-    </body>
+</body>
+
 </html>
